@@ -1,0 +1,96 @@
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+<body>
+    
+        <p>INVENTORY DETAILS</p>
+        <div class="bg"></div>
+            
+    
+    <table id="table">
+        <thead>
+            <tr>
+             <th>CLIENT</th> 
+             <th>PurchStruct</th>
+             <th>FiscalYr</th> 
+             <th>LineItm</th>
+             <th>Identi(item)</th>
+             <th>ClearDate</th>
+             <th>PostKey</th>
+             <th>Acctype</th>
+             <th>Debit/Credit</th>
+             <th>Acc(localcurr)</th>
+             <th>Amt(Doccurr)</th>
+             <th>ReductAmt(Localcurr)</th>
+             <th>AmtUpdate</th>
+             <th>UpdateCurr</th>
+             <th>Transcationkey</th>
+             <th>ValueDate</th>
+             <th>AssignmentNo</th>
+             <th>Transaction</th>
+             <th>PlanningDate</th>
+             <th>LeadgerAcc</th>
+             <th>DataElement</th>
+             <th>SalesDoc</th>
+             <th>ScheduleLine</th>
+             <th>PersoAdminStruct</th>
+             <th>Indicator</th>
+             <th>LedgerAcc</th>
+             <th>Acco</th>
+             <th>MaterialNo</th>
+             <th>External Service Struct</th>
+             <th>Alte quants Material</th>
+             <th>BasicUnit(measure)</th>
+             <th>Quantity</th>
+             <th>purchDocNo</th>
+             <th>ItemNo</th>
+            </tr>
+        </thead>
+      
+        
+        <tr *ngFor="let role of resdata">
+            <td><span>{{role.MANDIT}}</span></td> 
+            <td><span>{{role.BELNR}}</span></td> 
+            <td><span>{{role.GJAHR}}</span></td> 
+            <td><span>{{role.BUZEI}}</span></td> 
+            <td><span>{{role.BUZID}}</span></td> 
+            <td><span>{{role.AUGDT}}</span></td> 
+            <td><span>{{role.AUGCP}}</span></td> 
+            <td><span>{{role.BSCHL}}</span></td> 
+            <td><span>{{role.KOART}}</span></td> 
+            <td><span>{{role.SHKZG}}</span></td> 
+            <td><span>{{role.DMBTR}}</span></td> 
+            <td><span>{{role.WRBTR}}</span></td> 
+            <td><span>{{role.KZBTR}}</span></td> 
+            <td><span>{{role.PSWBT}}</span></td> 
+            <td><span>{{role.PSWSL}}</span></td> 
+            <td><span>{{role.KTOSL}}</span></td> 
+            <td><span>{{role.VALUT}}</span></td>
+            <td><span>{{role.ZUONR}}</span></td>  
+            <td><span>{{role.VORGN}}</span></td> 
+            <td><span>{{role.FDTAG}}</span></td>
+             <td><span>{{role.FKONT}}</span></td>
+             <td><span>{{role.KOKRS}}</span></td>
+             <td><span>{{role.POSN2}}</span></td>
+             <td><span>{{role.ETEN2}}</span></td>
+             <td><span>{{role.PERNR}}</span></td>
+             <td><span>{{role.XKRES}}</span></td>
+             <td><span>{{role.HKONT}}</span></td>
+             <td><span>{{role.LIFNR}}</span></td>
+             <td><span>{{role.MATNR}}</span></td>
+             <td><span>{{role.WERKS}}</span></td>
+             <td><span>{{role.MENGE}}</span></td>
+             <td><span>{{role.MEINS}}</span></td>
+             <td><span>{{role.ERFMG}}</span></td>
+             <td><span>{{role.EBELN}}</span></td>
+             
+        </tr>
+    </table>
+</body>
+</html>
+
+

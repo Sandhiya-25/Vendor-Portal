@@ -1,0 +1,79 @@
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+<body>
+    
+        <p>GOODS RECEIPT DETAILS</p>
+        <div class="bg"></div>
+            
+    
+    <table id="table">
+        <thead>
+            <tr>
+             <th>MaterialDoc</th> 
+             <th>Doc Year</th>
+             <th>MaterialDoc Item</th>
+             <th>Material</th>
+             <th>Plant</th>
+             <th>Stage Loc</th>
+             <th>Move Type</th>
+             <th>Vendor</th>
+             <th>Entry Qunatity</th>
+             <th>ENTRY_UOM</th>
+             <th>ENTRY_UOM_ISO</th>
+             <th>Purchase Order qty</th>
+             <th>PO No</th>
+             <th>Po Item</th>
+             <th>Line Id</th>
+             <th>Parent Id</th>
+             <th></th>
+            </tr>
+        </thead>
+        <tr *ngFor="let role of resdata">
+            <td><span>{{role.MAT_DOC}}</span></td> 
+            <td><span>{{role.DOC_YEAR}}</span></td>
+            <td><span>{{role.MATDOC_ITM}}</span></td>
+            <td><span>{{role.MATERIAL}}</span></td>
+            <td><span>{{role.PLANT}}</span></td>
+            <td><span>{{role.STGE_LOC}}</span></td>
+            <td><span>{{role.MOVE_TYPE}}</span></td>
+            <td><span>{{role.VENDOR}}</span></td>
+            <td><span>{{role.ENTRY_QNT}}</span></td>
+            <td><span>{{role.ENTRY_UOM}}</span></td>
+            <td><span>{{role.ENTRY_UOM_ISO}}</span></td>
+            <td><span>{{role.PO_PR_QNT}}</span></td>
+            <td><span>{{role.PO_NUMBER}}</span></td>
+            <td><span>{{role.PO_ITEM}}</span></td>
+            <td><span>{{role.LINE_ID}}</span></td>
+            <td><span>{{role.PARENT_ID}}</span></td>
+        </tr>
+    </table>
+</body>
+</html>
+            
+
+            
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

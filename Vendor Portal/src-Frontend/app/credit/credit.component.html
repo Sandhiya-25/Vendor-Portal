@@ -1,0 +1,51 @@
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+<body>
+    
+        <p>CREDIT DETAILS</p>
+        <div class="bg"></div>
+            
+    
+    <table id="table">
+        <thead>
+            <tr>
+             <th>CompanyCode</th> 
+             <th>FiscalYear</th>
+             <th>PostingDate</th>
+             <th>DocDate</th>
+             <th>PostingKey</th>
+             <th>Debit/Credit(Indicator)</th>
+             <th>AccLocCurrency</th>
+             <th>Amt(DocCurrency)</th>
+             <th>Cashdis(Doc Currency)</th>
+             <th>AmtUpdating</th>
+             <th>UpdateCurrency</th>
+             <th>Aging</th>
+             <th>MaterialNo</th>
+             <th>Acctype</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let role of resdata">
+            <td><span>{{role.BUKRS}}</span></td> 
+            <td><span>{{role.BELNR}}</span></td> 
+            <td><span>{{role.BUDAT}}</span></td> 
+            <td><span>{{role.BLDAT}}</span></td> 
+            <td><span>{{role.BSCHL}}</span></td>
+            <td><span>{{role.SHKZG}}</span></td>
+            <td><span>{{role.DMBTR}}</span></td>
+            <td><span>{{role.WRBTR}}</span></td>
+            <td><span>{{role.SKFBT}}</span></td>
+            <td><span>{{role.PSWBT}}</span></td>
+            <td><span>{{role.PSWSL}}</span></td>
+            <td><span>{{role.AGING}}</span></td>
+            <td><span>{{role.MATNR}}</span></td>
+            <td><span>{{role.KOART}}</span></td>
+        </tr>
+    </table>
+</body>
+</html>

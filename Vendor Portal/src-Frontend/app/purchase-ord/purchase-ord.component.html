@@ -1,0 +1,93 @@
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+
+<body>
+    
+        <p text-align: center >PURCHASE ORDERDETAILS</p>
+        <div class="bg"></div>
+            
+    
+    <table id="table">
+        <thead>
+            <tr>
+             <th>PO_NUMBER</th> 
+             <th>PO_ITEM</th>
+             <th>CHANGED_ON</th>
+             <th>SHORT_TEXT</th>
+             <th>MATERIAL</th>
+             <th>PUR_MAT</th>
+             <th>CO_CODE</th>
+             <th>PLANT</th>
+             <th>STORE_LOC</th>
+             <th>MAT_GRP</th>
+             <th>INFO_REC</th>
+             <th>TARGET_QTY</th>
+             <th>QUANTITY</th>
+             <th>UNIT</th>
+             <th>ORDERPR_UN</th>
+             <th>CONV_NUM1</th>
+             <th>CONV_DEN1</th>
+             <th>CONV_NUM2</th>
+             <th>CONV_DEN2</th>
+             <th>NET_PRICE</th>
+             <th>PRICE_UNIT</th>
+             <th>NET_VALUE</th>
+             <th>GROS_VALUE</th>
+             <th>PRNT_PRICE</th>
+             <th>BASE_UNIT</th>
+             <th>PRICE_DATE</th>
+             <th>DOC_CAT</th>
+             <th>EFF_VALUE</th>
+             <th>UPDATE_GRP</th>
+             <th>BASE_UOM_ISO</th>
+             <th>MAT_TYPE</th>
+             <th>PREQ_NO</th>
+             <th>SER_NO</th>
+             </tr>
+        </thead>
+
+        <tr *ngFor="let role of resdata">
+            <td><span>{{role.PO_NUMBER}}</span></td>
+            <td><span>{{role.PO_ITEM}}</span></td>
+            <td><span>{{role.CHANGED_ON}}</span></td>
+            <td><span>{{role.SHORT_TEXT}}</span></td>
+            <td><span>{{role.MATERIAL}}</span></td>
+            <td><span>{{role.PUR_MAT}}</span></td>
+            <td><span>{{role.CO_CODE}}</span></td>
+            <td><span>{{role.PLANT}}</span></td>
+            <td><span>{{role.STORE_LOC}}</span></td>
+            <td><span>{{role.MAT_GRP}}</span></td>
+            <td><span>{{role.INFO_REC}}</span></td>
+            <td><span>{{role.TARGET_QTY}}</span></td>
+            <td><span>{{role.QUANTITY}}</span></td>
+            <td><span>{{role.UNIT}}</span></td>
+            <td><span>{{role.ORDERPR_UN}}</span></td>
+            <td><span>{{role.CONV_NUM1}}</span></td>
+            <td><span>{{role.CONV_DEN1}}</span></td>
+            <td><span>{{role.CONV_NUM2}}</span></td>
+            <td><span>{{role.CONV_DEN2}}</span></td>
+            <td><span>{{role.NET_PRICE}}</span></td>
+            <td><span>{{role.PRICE_UNIT}}</span></td>
+            <td><span>{{role.NET_VALUE}}</span></td>
+            <td><span>{{role.GROS_VALUE}}</span></td>
+            <td><span>{{role.PRNT_PRICE}}</span></td>
+            <td><span>{{role.BASE_UNIT}}</span></td>
+            <td><span>{{role.PRICE_DATE}}</span></td>
+            <td><span>{{role.DOC_CAT}}</span></td>
+            <td><span>{{role.EFF_VALUE}}</span></td>
+            <td><span>{{role.UPDATE_GRP}}</span></td>
+            <td><span>{{role.BASE_UOM_ISO}}</span></td>
+            <td><span>{{role.MAT_TYPE}}</span></td>
+            <td><span>{{role.PREQ_NO}}</span></td>
+            <td><span>{{role.SER_NO}}</span></td>
+            
+
+
+            </tr>
+    </table>
+</body>
+</html>

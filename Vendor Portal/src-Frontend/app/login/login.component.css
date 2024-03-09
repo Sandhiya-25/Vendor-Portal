@@ -1,0 +1,62 @@
+mat-card {
+	max-width: 600px;
+	margin: 2em auto;
+	text-align: center;
+	max-height: 600px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  
+  .header{
+	text-align: center;
+  
+  }
+  .full-width {
+	width: 80%;
+  }
+  
+  .button-row {
+	padding-top: 5px;
+  }
+  
+  .button-row a {
+	margin-right: 8px;
+	text-align: center;
+  }
+  
+  .forget-password{
+	padding-left: 0px;
+  }
+  
+  .emailInput{
+	padding-top: 10px;
+  }
+  
+  .contentBody {
+	padding: 60px 1rem;
+	background :#1b6ca8;
+	display: block;
+  }
+  
+  .aLink{
+	float: right;
+	padding-right: 60px;
+	text-decoration: none;
+  }
+  
